@@ -9,10 +9,6 @@ public class LoginUserDto {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -21,5 +17,4 @@ public class LoginUserDto {
         this.password = password;
     }
 
-    // getters and setters here...
 }
