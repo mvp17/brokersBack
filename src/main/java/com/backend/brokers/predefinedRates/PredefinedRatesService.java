@@ -1,6 +1,5 @@
 package com.backend.brokers.predefinedRates;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,8 +7,11 @@ import java.util.Optional;
 
 @Service
 public class PredefinedRatesService {
-    @Autowired
-    private PredefinedRatesRepository repository;
+    private final PredefinedRatesRepository repository;
+
+    public PredefinedRatesService(PredefinedRatesRepository repository) {
+        this.repository = repository;
+    }
 
     public List<PredefinedRates> getAllRates() {
         return repository.findAll();

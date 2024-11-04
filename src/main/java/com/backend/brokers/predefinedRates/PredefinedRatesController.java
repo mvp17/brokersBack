@@ -1,16 +1,18 @@
 package com.backend.brokers.predefinedRates;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/rates")
+@RequestMapping("/api/predefinedRates")
 public class PredefinedRatesController {
-    @Autowired
-    private PredefinedRatesService service;
+    private final PredefinedRatesService service;
+
+    public PredefinedRatesController(PredefinedRatesService service) {
+        this.service = service;
+    }
 
     // GET all rates
     @GetMapping

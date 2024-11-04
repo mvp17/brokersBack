@@ -10,11 +10,9 @@ docker volume ls
 
 docker run -d -p 33060:3306 --name mysql-db  -e MYSQL_ROOT_PASSWORD=secret --mount src=mysql-db-data,dst=/var/lib/mysql mysql
 
-# Create db
 docker exec -it mysql-db mysql -p
-
+# Create db
 create database brokers;
-
 show databases;
 
 # DB
