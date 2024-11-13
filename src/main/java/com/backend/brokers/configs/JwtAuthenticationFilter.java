@@ -1,6 +1,6 @@
 package com.backend.brokers.configs;
 
-import com.backend.brokers.users.services.JwtService;
+import com.backend.brokers.modules.users.services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

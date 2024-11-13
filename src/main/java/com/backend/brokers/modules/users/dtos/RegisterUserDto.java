@@ -1,4 +1,4 @@
-package com.backend.brokers.users.dtos;
+package com.backend.brokers.modules.users.dtos;
 
 public class RegisterUserDto {
     private String email;

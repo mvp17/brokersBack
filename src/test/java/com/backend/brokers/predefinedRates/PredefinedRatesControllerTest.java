@@ -1,6 +1,9 @@
 package com.backend.brokers.predefinedRates;
 
-import com.backend.brokers.users.services.JwtService;
+import com.backend.brokers.modules.predefinedRates.PredefinedRates;
+import com.backend.brokers.modules.predefinedRates.PredefinedRatesController;
+import com.backend.brokers.modules.predefinedRates.PredefinedRatesService;
+import com.backend.brokers.modules.users.services.JwtService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

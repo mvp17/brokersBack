@@ -1,4 +1,4 @@
-package com.backend.brokers.predefinedRates;
+package com.backend.brokers.modules.predefinedRates;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.backend.brokers.users;
+package com.backend.brokers.modules.users;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

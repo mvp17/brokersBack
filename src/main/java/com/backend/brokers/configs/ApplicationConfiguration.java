@@ -1,6 +1,6 @@
 package com.backend.brokers.configs;
 
-import com.backend.brokers.users.UserRepository;
+import com.backend.brokers.modules.users.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;

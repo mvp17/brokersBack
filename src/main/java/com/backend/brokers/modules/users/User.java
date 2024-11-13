@@ -1,4 +1,4 @@
-package com.backend.brokers.users;
+package com.backend.brokers.modules.users;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;

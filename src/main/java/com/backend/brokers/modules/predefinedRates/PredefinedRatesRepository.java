@@ -1,4 +1,4 @@
-package com.backend.brokers.predefinedRates;
+package com.backend.brokers.modules.predefinedRates;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

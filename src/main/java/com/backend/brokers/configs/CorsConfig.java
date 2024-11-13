@@ -17,7 +17,7 @@ public class CorsConfig {
         configuration.setAllowCredentials(true); // Allow credentials
         configuration.setAllowedOrigins(List.of("http://localhost:4200")); // Replace with your allowed origin(s)
         configuration.addAllowedOriginPattern("*"); // Alternatively, use this to allow all origins
-        configuration.setAllowedMethods(List.of("GET","POST"));
+        configuration.setAllowedMethods(List.of("GET","POST", "DELETE", "PUT"));
         configuration.setAllowedHeaders(List.of("Authorization","Content-Type"));
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();

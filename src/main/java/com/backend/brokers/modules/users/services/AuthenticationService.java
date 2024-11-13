@@ -1,9 +1,9 @@
-package com.backend.brokers.users.services;
+package com.backend.brokers.modules.users.services;
 
-import com.backend.brokers.users.User;
-import com.backend.brokers.users.UserRepository;
-import com.backend.brokers.users.dtos.LoginUserDto;
-import com.backend.brokers.users.dtos.RegisterUserDto;
+import com.backend.brokers.modules.users.UserRepository;
+import com.backend.brokers.modules.users.User;
+import com.backend.brokers.modules.users.dtos.LoginUserDto;
+import com.backend.brokers.modules.users.dtos.RegisterUserDto;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;

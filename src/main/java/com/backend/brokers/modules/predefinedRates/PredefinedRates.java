@@ -1,4 +1,4 @@
-package com.backend.brokers.predefinedRates;
+package com.backend.brokers.modules.predefinedRates;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

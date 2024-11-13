@@ -1,4 +1,4 @@
-package com.backend.brokers.users.services;
+package com.backend.brokers.modules.users.services;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

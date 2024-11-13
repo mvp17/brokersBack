@@ -1,10 +1,10 @@
-package com.backend.brokers.users;
+package com.backend.brokers.modules.users;
 
-import com.backend.brokers.users.dtos.LoginResponse;
-import com.backend.brokers.users.dtos.LoginUserDto;
-import com.backend.brokers.users.dtos.RegisterUserDto;
-import com.backend.brokers.users.services.AuthenticationService;
-import com.backend.brokers.users.services.JwtService;
+import com.backend.brokers.modules.users.dtos.LoginResponse;
+import com.backend.brokers.modules.users.dtos.RegisterUserDto;
+import com.backend.brokers.modules.users.services.AuthenticationService;
+import com.backend.brokers.modules.users.services.JwtService;
+import com.backend.brokers.modules.users.dtos.LoginUserDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

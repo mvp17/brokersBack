@@ -24,7 +24,3 @@ single BOOLEAN NOT NULL
 );
 SHOW TABLES;
 DESCRIBE table_name;
-
-
-
-

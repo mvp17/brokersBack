@@ -2,6 +2,10 @@ package com.backend.brokers.predefinedRates;
 
 import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.backend.brokers.modules.predefinedRates.PredefinedRates;
+import com.backend.brokers.modules.predefinedRates.PredefinedRatesRepository;
+import com.backend.brokers.modules.predefinedRates.PredefinedRatesService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
