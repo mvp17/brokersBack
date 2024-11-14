@@ -1,4 +1,4 @@
-package com.backend.brokers.modules.predefinedRates;
+package com.backend.brokers.modules.electricityPredefinedRates;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class PredefinedRates {
+public class ElectricityPredefinedRates {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -20,22 +20,22 @@ public class PredefinedRates {
     private Double marPotP1, marPotP2, marPotP3, marPotP4, marPotP5, marPotP6, marEneP1, marEneP2, marEneP3, marEneP4,
             marEneP5, marEneP6;
 
-    public PredefinedRates(String name,
-                           Boolean singlePrice,
-                           String rate,
-                           String type,
-                           Double marPotP1,
-                           Double marPotP2,
-                           Double marPotP3,
-                           Double marPotP4,
-                           Double marPotP5,
-                           Double marPotP6,
-                           Double marEneP1,
-                           Double marEneP2,
-                           Double marEneP3,
-                           Double marEneP4,
-                           Double marEneP5,
-                           Double marEneP6) {
+    public ElectricityPredefinedRates(String name,
+                                      Boolean singlePrice,
+                                      String rate,
+                                      String type,
+                                      Double marPotP1,
+                                      Double marPotP2,
+                                      Double marPotP3,
+                                      Double marPotP4,
+                                      Double marPotP5,
+                                      Double marPotP6,
+                                      Double marEneP1,
+                                      Double marEneP2,
+                                      Double marEneP3,
+                                      Double marEneP4,
+                                      Double marEneP5,
+                                      Double marEneP6) {
         this.name = name;
         this.singlePrice = singlePrice;
         this.rate = rate;
@@ -54,7 +54,7 @@ public class PredefinedRates {
         this.marEneP6 = marEneP6;
     }
 
-    public PredefinedRates() {
+    public ElectricityPredefinedRates() {
 
     }
 

@@ -1,4 +1,4 @@
-package com.backend.brokers.modules.predefinedRates;
+package com.backend.brokers.modules.electricityPredefinedRates;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -7,22 +7,22 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/predefinedRates")
-public class PredefinedRatesController {
-    private final PredefinedRatesService service;
+public class ElectricityPredefinedRatesController {
+    private final ElectricityPredefinedRatesService service;
 
-    public PredefinedRatesController(PredefinedRatesService service) {
+    public ElectricityPredefinedRatesController(ElectricityPredefinedRatesService service) {
         this.service = service;
     }
 
     // GET all rates
     @GetMapping
-    public List<PredefinedRates> getAllRates() {
+    public List<ElectricityPredefinedRates> getAllRates() {
         return service.getAllRates();
     }
 
     // GET rate by ID
     @GetMapping("/{id}")
-    public ResponseEntity<PredefinedRates> getRateById(@PathVariable Integer id) {
+    public ResponseEntity<ElectricityPredefinedRates> getRateById(@PathVariable Integer id) {
         return service.getRateById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -30,13 +30,13 @@ public class PredefinedRatesController {
 
     // CREATE a new rate
     @PostMapping
-    public PredefinedRates createRate(@RequestBody PredefinedRates rate) {
+    public ElectricityPredefinedRates createRate(@RequestBody ElectricityPredefinedRates rate) {
         return service.createRate(rate);
     }
 
     // UPDATE an existing rate
     @PutMapping("/{id}")
-    public ResponseEntity<PredefinedRates> updateRate(@PathVariable Integer id, @RequestBody PredefinedRates rateDetails) {
+    public ResponseEntity<ElectricityPredefinedRates> updateRate(@PathVariable Integer id, @RequestBody ElectricityPredefinedRates rateDetails) {
         return ResponseEntity.ok(service.updateRate(id, rateDetails));
     }
 

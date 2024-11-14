@@ -1,4 +1,4 @@
-package com.backend.brokers.modules.predefinedRates;
+package com.backend.brokers.modules.electricityPredefinedRates;
 
 import org.springframework.stereotype.Service;
 
@@ -6,26 +6,26 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PredefinedRatesService {
-    private final PredefinedRatesRepository repository;
+public class ElectricityPredefinedRatesService {
+    private final ElectricityPredefinedRatesRepository repository;
 
-    public PredefinedRatesService(PredefinedRatesRepository repository) {
+    public ElectricityPredefinedRatesService(ElectricityPredefinedRatesRepository repository) {
         this.repository = repository;
     }
 
-    public List<PredefinedRates> getAllRates() {
+    public List<ElectricityPredefinedRates> getAllRates() {
         return repository.findAll();
     }
 
-    public Optional<PredefinedRates> getRateById(Integer id) {
+    public Optional<ElectricityPredefinedRates> getRateById(Integer id) {
         return repository.findById(id);
     }
 
-    public PredefinedRates createRate(PredefinedRates rate) {
+    public ElectricityPredefinedRates createRate(ElectricityPredefinedRates rate) {
         return repository.save(rate);
     }
 
-    public PredefinedRates updateRate(Integer id, PredefinedRates rateDetails) {
+    public ElectricityPredefinedRates updateRate(Integer id, ElectricityPredefinedRates rateDetails) {
         return repository.findById(id).map(rate -> {
             rate.setName(rateDetails.getName());
             rate.setSinglePrice(rateDetails.getSinglePrice());

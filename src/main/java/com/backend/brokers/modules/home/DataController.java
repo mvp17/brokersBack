@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/data")
+@RequestMapping("/api/home")
 public class DataController {
     @GetMapping("/countries")
     public List<CountryData> getCountryData() {

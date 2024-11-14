@@ -39,6 +39,7 @@ public class AuthenticationController {
         LoginResponse loginResponse = new LoginResponse();
         loginResponse.setToken(jwtToken);
         loginResponse.setExpiresIn(jwtService.getExpirationTime());
+        loginResponse.setFullName(authenticatedUser.getFullName());
 
         return ResponseEntity.ok(loginResponse);
     }
